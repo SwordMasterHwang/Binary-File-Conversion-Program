@@ -30,8 +30,8 @@ private void AddNoise()
             {
                 for (int j = 0; j < DataCount; j++)//****** 데이터 개수까지
                 {
-                    whiteNoise[i, j] += Convert.ToSingle(random.NextDouble() * (amplitude * 2) - amplitude); // 진폭 입력대로
-                    DataRaw[i][j] += whiteNoise[i, j];//noise 추가
+                    float n = Convert.ToSingle(random.NextDouble() * (amplitude * 2) - amplitude); // 진폭 입력대로
+                    DataRaw[i][j] += n;//noise 추가
                 }
             }
 
